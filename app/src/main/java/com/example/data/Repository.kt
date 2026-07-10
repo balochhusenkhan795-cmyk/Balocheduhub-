@@ -27,7 +27,7 @@ object Repository {
         User(
             id = "user_student_1",
             name = "Aman Kumar",
-            email = "aman.student@neetjeeprep.com",
+            email = "aman.student@balocheduhub.com",
             role = UserRole.STUDENT,
             streak = 5,
             coins = 240,
@@ -402,9 +402,9 @@ object Repository {
             UserRole.ADMIN -> "Platform Admin"
         }
         val newEmail = when (newRole) {
-            UserRole.STUDENT -> "aman.student@neetjeeprep.com"
-            UserRole.TEACHER -> "swati.teacher@neetjeeprep.com"
-            UserRole.ADMIN -> "admin@neetjeeprep.com"
+            UserRole.STUDENT -> "aman.student@balocheduhub.com"
+            UserRole.TEACHER -> "swati.teacher@balocheduhub.com"
+            UserRole.ADMIN -> "admin@balocheduhub.com"
         }
         currentUser.value = current.copy(name = newName, email = newEmail, role = newRole)
     }
